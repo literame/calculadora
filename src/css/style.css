@@ -21,19 +21,22 @@
     
     display: flex;
     text-align: right;
+
 }
 
 .boxbotton{
     margin: 5px 8px;
     display: grid;
     grid-template-columns:repeat(4, 1fr);
+    /* grid-template-columns: 30px; */
+    grid-template-rows:repeat(4, 35px);
 }
 .boton{
-    width: 20%;
-    height: 30px;
+    /* width: 20%;
+    height: 30px; */
     background: white;
     border-radius: 5px;
     border: 1px solid gray;
-    
+    grid-template-rows:25px;
     
 }
