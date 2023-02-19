@@ -1,0 +1,39 @@
+
+
+.contenedor{
+
+    width: 350px;
+    height: 400px;
+    border-radius: 15px;
+    border: 1px solid lightcoral;
+    border-top: 3px solid lightsalmon;
+
+}
+
+.window{
+    
+    width: 300;
+    margin: 5px 8px;
+    height: 50px;
+    border: 1px solid rgb(11, 132, 239);
+    border-radius: 5px;
+    color: lightslategrey;
+    
+    display: flex;
+    text-align: right;
+}
+
+.boxbotton{
+    margin: 5px 8px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+}
+.boton{
+    width: 20%;
+    height: 30px;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    
+    
+}
