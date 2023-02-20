@@ -14,23 +14,40 @@
     
     width: 300;
     margin: 5px 8px;
+    padding: 0;
     height: 50px;
     border: 1px solid rgb(11, 132, 239);
     border-radius: 5px;
     color: lightslategrey;
     
-    display: flex;
-    text-align: right;
+    
 
+}
+.window .formula{
+    font-size: 14px;
+    color: black;
+    margin: 0 4px;
+    padding: 1px;
+    text-align: right;
+}
+
+.window .resultado{
+    font-size: 20px;
+    color: lightcoral;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 4px;
+    text-align: right;
 }
 
 .boxbotton{
-    margin: 5px 8px;
+    margin: 10px 8px;
     display: grid;
     grid-template-columns:repeat(4, 1fr);
     /* grid-template-columns: 30px; */
     grid-template-rows:repeat(4, 35px);
+    gap: 5px;
 }
+
 .boton{
     /* width: 20%;
     height: 30px; */
@@ -38,5 +55,9 @@
     border-radius: 5px;
     border: 1px solid gray;
     grid-template-rows:25px;
-    
+    cursor: pointer;
+}
+
+.boton:hover{
+    background: whitesmoke;
 }
