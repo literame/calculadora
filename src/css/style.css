@@ -50,12 +50,18 @@
     margin: 15px 8px;
     padding: 2px;
     height: 75%;
+
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 5px;
+
+    /* display: grid;
     grid-template-columns:repeat(4, 1fr);
-    /* grid-template-columns: 30px; */
+    grid-template-columns: 30px; 
     grid-template-rows:repeat(4, 50px);
     gap: 5px;
-    /* background: orchid; */
+    background: orchid;  */
 }
 
 .boton{
@@ -66,6 +72,9 @@
     border: 1px solid gray;
     grid-template-rows:25px;
     cursor: pointer;
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
 }
 
 .boton:hover{
@@ -74,6 +83,6 @@
 
  .boxbotton > .boton:nth-child(17) {
     
-    grid-column: 1; 
+    grid-column: span 2;
 
 }
