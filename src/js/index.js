@@ -1,2 +1,6 @@
+window.addEventListener('load', () =>{
+    const display = document.querySelector('.resultado');
+    const keypadbutton = document.getElementsByClassName('boton');
 
-const btn0 = document.getElementById('btn0').value;
+    
+})
