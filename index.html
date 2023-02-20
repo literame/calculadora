@@ -13,7 +13,7 @@
     <div class="contenedor">
 
         <div class="window"> 
-            <p class="formula">resultado</p> 
+            <p class="formula">formula</p> 
             <p class="resultado">resultado</p> 
         </div>
 
@@ -37,19 +37,27 @@
             <input type="button" value="/" class="boton mats">
 
             <input type="button" value="0" class="boton">
+            
+            <input type="button" value="." class="boton mats">
             <input type="button" value="=" class="boton mats">
             
 
         </div>
-        <div class="formats">
-            
-            
-            
-            
-            
-        </div>
+        
     </div>
 
+    
+    <p>Esta página ha sido visitada <span id="contador">0</span> veces.</p>
+
+    <script>
+      let contador = localStorage.getItem("contador") || 0;
+      document.getElementById("contador").textContent = contador;
+    
+      window.addEventListener("beforeunload", () => {
+        contador++;
+        localStorage.setItem("contador", contador);
+      });
+    </script>
     
     <script src="./src/js/index.js"></script>
 </body>

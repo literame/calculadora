@@ -6,7 +6,7 @@
     height: 400px;
     border-radius: 15px;
     border: 1px solid lightcoral;
-    border-top: 3px solid lightsalmon;
+    border-top: 5px solid lightsalmon;
 
 }
 
@@ -15,37 +15,47 @@
     width: 300;
     margin: 5px 8px;
     padding: 0;
-    height: 50px;
-    border: 1px solid rgb(11, 132, 239);
+    height: 15%;
+    border: 1px solid rgb(232, 234, 236);
     border-radius: 5px;
     color: lightslategrey;
-    
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
 
 }
 .window .formula{
+    
     font-size: 14px;
     color: black;
     margin: 0 4px;
     padding: 1px;
     text-align: right;
+    border-bottom: 1px solid orange;
+    height: 20px;
+    font-family: monospace;
 }
 
 .window .resultado{
+    
     font-size: 20px;
     color: lightcoral;
     font-family: 'Times New Roman', Times, serif;
     margin: 0 4px;
     text-align: right;
+    
 }
 
 .boxbotton{
-    margin: 10px 8px;
+    margin: 15px 8px;
+    padding: 2px;
+    height: 80%;
     display: grid;
     grid-template-columns:repeat(4, 1fr);
     /* grid-template-columns: 30px; */
-    grid-template-rows:repeat(4, 35px);
+    grid-template-rows:repeat(4, 50px);
     gap: 5px;
+    background: orchid;
 }
 
 .boton{
